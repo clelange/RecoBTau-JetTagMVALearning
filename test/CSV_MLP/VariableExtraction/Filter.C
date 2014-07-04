@@ -4,7 +4,7 @@ void Filter() {
 //void Filter(TString filename, TString treename) {
 // Example of Root macro based on $ROOTSYS/tutorials/tree/copytree3.C
    
-  gSystem->Load("$ROOTSYS/test/libEvent");
+//  gSystem->Load("$ROOTSYS/test/libEvent");
 
 	string filename[9]={"CombinedSVV2NoVertex_B.root","CombinedSVV2NoVertex_C.root","CombinedSVV2NoVertex_DUSG.root","CombinedSVV2PseudoVertex_B.root","CombinedSVV2PseudoVertex_C.root","CombinedSVV2PseudoVertex_DUSG.root","CombinedSVV2RecoVertex_B.root","CombinedSVV2RecoVertex_C.root","CombinedSVV2RecoVertex_DUSG.root"};
 	TString treename[9]={"CombinedSVV2NoVertex","CombinedSVV2NoVertex","CombinedSVV2NoVertex","CombinedSVV2PseudoVertex","CombinedSVV2PseudoVertex","CombinedSVV2PseudoVertex","CombinedSVV2RecoVertex","CombinedSVV2RecoVertex","CombinedSVV2RecoVertex"};
@@ -13,7 +13,7 @@ void Filter() {
 	Float_t ptbins[] = {15,40,60,90,150,400,600,10000};
 	Float_t etabins[] = {0,1.2,2.1,2.4};
 
-	for(int k = 2; k<3; k++){
+	for(int k = 0; k<9; k++){
   
 		//Get old file, old tree and set top branch address
   	TString name = filename[k].c_str();
